@@ -1,0 +1,9 @@
+{
+    "CloseSteam": true,
+    "CloseDiscord": true,
+    "CloseSpotify": true,
+    "CloseEdge": false,
+    "PauseOneDrive": true,
+    "OpenVSCode": true,
+    "PowerPlan": "HighPerformance"
+}
