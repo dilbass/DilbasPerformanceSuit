@@ -7,6 +7,6 @@ function Clear-TempFiles {
 
     Write-Host "OK!" -ForegroundColor Green
 
-    Write-Log "Arquivos temporários removidos."
+    Write-AppLog "Arquivos temporários removidos."
 
 }
