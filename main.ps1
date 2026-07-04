@@ -1,29 +1,15 @@
-. "$PSScriptRoot\modules\Logger.ps1"
-. "$PSScriptRoot\modules\Cleaner.ps1"
-. "$PSScriptRoot\modules\Utils.ps1"
-. "$PSScriptRoot\modules\DeveloperMode.ps1"
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+
+$OutputEncoding = [System.Text.Encoding]::UTF8
+
+. "$PSScriptRoot\core\Config.ps1"
+. "$PSScriptRoot\core\Version.ps1"
+. "$PSScriptRoot\core\Logger.ps1"
+. "$PSScriptRoot\core\ModuleLoader.ps1"
+. "$PSScriptRoot\core\Bootstrap.ps1"
+
+Start-Bootstrap
 
 Show-Title
 
-Write-Host "1 - Modo Programação"
-Write-Host "2 - Limpeza"
-
-Write-Host ""
-
-$opcao = Read-Host "Escolha"
-
-switch($opcao){
-
-    "1"{
-
-        Start-DeveloperMode
-
-    }
-
-    "2"{
-
-        Clear-TempFiles
-
-    }
-
-}
+Show-Menu
