@@ -1,0 +1,10 @@
+logs/*
+!logs/.gitkeep
+
+.vscode/*
+!.vscode/settings.json
+
+*.log
+*.tmp
+*.bak
+Thumbs.db
